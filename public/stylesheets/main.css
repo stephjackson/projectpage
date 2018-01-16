@@ -71,7 +71,7 @@ a:hover {
   background-image: url(/images/gameboy.jpg);
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
     h1, a {
       font-size: 600%;
     }
