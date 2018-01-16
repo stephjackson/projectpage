@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var port = process.env.PORT || 8080;
 var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -14,6 +15,6 @@ app.get("/gbsketch", function(req, res){
     res.render("sketch");
 });
 
-app.listen(3000, function(){
+app.listen(port, function(){
     console.log('Server is up on 3000');
 });
