@@ -1,26 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,700');
 
-html {
-  height: 100%;
-}
-
 body {
-  background: url(/images/background.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
   font-family: Fira Sans;
+  margin: 0;
+  padding: 0;
 }
 
-h1, p {
+h1, p, a {
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-h1 {
+h1, a {
   font-size: 4em;
+}
+
+a:hover {
+  color: #9bb3db;
+  text-decoration: none;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
 .content {
   text-align: center;
-  padding-top: 25%;
+  vertical-align: middle;
+  padding-top: 20%;
+}
+
+.parallax {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+
+#bg1 {
+  background-image: url(/images/code.jpeg);
+}
+
+#bg2 {
+  background-image: url(/images/octopus.jpeg)
+}
+
+#bg3 {
+  background-image: url(/images/suit.jpeg)
 }
