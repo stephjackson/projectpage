@@ -17,11 +17,11 @@ h1, p, a {
 }
 
 h1, a {
-  font-size: 4em;
+  font-size: 400%;
 }
 
 p {
-  font-size: 1.125em;
+  font-size: 120%;
 }
 
 a:hover {
@@ -36,11 +36,11 @@ a:hover {
 
 .content {
   text-align: center;
-  /* padding-top: 40vh; */
   position: relative;
 }
 
 .textContainer {
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,9 +60,24 @@ a:hover {
 }
 
 #bg2 {
-  background-image: url(/images/octopus.jpeg)
+  background-image: url(/images/octopus.jpeg);
 }
 
 #bg3 {
-  background-image: url(/images/suit.jpeg)
+  background-image: url(/images/suit.jpeg);
+}
+
+#bg4 {
+  background-image: url(/images/gameboy.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+    h1, a {
+      font-size: 500%;
+    }
+
+    p {
+      font-size: 150%;
+    }
+
 }

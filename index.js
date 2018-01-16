@@ -10,6 +10,10 @@ app.get("/", function(req, res){
     res.render("landing");
 });
 
+app.get("/gbsketch", function(req, res){
+    res.render("sketch");
+});
+
 app.listen(3000, function(){
     console.log('Server is up on 3000');
 });
