@@ -1,6 +1,6 @@
 var express = require("express");
 var app = express();
-var bodyParser    = require("body-parser");
+var bodyParser = require("body-parser");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -11,7 +11,7 @@ app.get("/", function(req, res){
 });
 
 app.get("/gbsketch", function(req, res){
-    res.render("sketch");
+    res.send("This is a test.");
 });
 
 app.listen(3000, function(){
