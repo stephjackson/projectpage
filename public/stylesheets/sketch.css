@@ -10,7 +10,7 @@ body {
   padding: 0px;
   z-index: 0;
   font-family: Questrial;
-  background-color: #C3BFBC
+  background-color: #C3BFBC;
 }
 
 h1 {
@@ -28,6 +28,7 @@ h1 {
   margin: 0 auto;
   background-color: #535356;
   border-radius: 30px;
+  border-bottom-right-radius: 120px;
 }
 
 .container {
