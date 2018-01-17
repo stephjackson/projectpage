@@ -115,42 +115,13 @@ h1 {
   }
 }
 
-/* @media screen and (orientation: portrait), screen and (max-width: 700px) {
-  .body {
-    background-color: #535356
+@media screen and (orientation: portrait)
+{
+  .lightGrayContainer {
+    height: 1500px;
+    border-radius: 8px;
   }
-
-  .darkGrayContainer {
-    height: 100%;
-    width: 100%;
-    border-radius: 0;
-    margin-left: 0%;
-    margin-right: 0%;
-  }
-
-  .fancy span{
-    visibility: hidden;
-  }
-
-  .mobile {
-    visibility: visible;
-  }
-
-  @keyframes startscreen {
-    from {
-      visibility: visible;
-      margin-top: 10%;
-    }
-
-    66% {
-      margin-top: 40%;
-    }
-
-    to {
-      margin-top: 40%;
-    }
-  }
-} */
+}
 
 /* .darkestGreen {
   background-color: #0f380f
