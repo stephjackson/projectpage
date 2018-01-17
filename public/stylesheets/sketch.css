@@ -89,6 +89,7 @@ h1 {
 
 @keyframes startscreen {
   from {
+    margin-top: 10%;
     visibility: visible;
   }
 
