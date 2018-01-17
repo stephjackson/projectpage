@@ -2,6 +2,7 @@ var express = require("express");
 var app = express();
 var port = process.env.PORT || 8080;
 var bodyParser = require("body-parser");
+var howler = require("howler");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -16,5 +17,5 @@ app.get("/gbsketch", function(req, res){
 });
 
 app.listen(port, function(){
-    console.log('Server is up on 3000');
+    console.log('Server is up on ' + port);
 });

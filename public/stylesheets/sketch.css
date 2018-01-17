@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 
 html, body {
   height: 100%;
@@ -27,6 +28,10 @@ h1 {
   margin-left: 25%;
   margin-right: 25%;
   border-radius: 30px;
+}
+
+.invisibleContainer {
+  width: 448px;
 }
 
 .container {
@@ -77,6 +82,32 @@ h1 {
   visibility: hidden;
 }
 
+#animation {
+  font-family: "Press Start 2P";
+  position: absolute;
+  animation-duration: 6s;
+  animation-name: startscreen;
+  z-index: 2;
+  visibility: hidden;
+  margin-left: 45%;
+  width: 0;
+}
+
+@keyframes startscreen {
+  from {
+    visibility: visible;
+    margin-top: 6%;
+  }
+
+  66% {
+    margin-top: 18.5%;
+  }
+
+  to {
+    margin-top: 18.5%;
+  }
+}
+
 @media screen and (orientation: portrait), screen and (max-width: 1200px) {
   .body {
     background-color: #535356
@@ -98,6 +129,24 @@ h1 {
     visibility: visible;
   }
 
+  #animation {
+    margin-left: 40%;
+  }
+
+  @keyframes startscreen {
+    from {
+      visibility: visible;
+      margin-top: 10%;
+    }
+
+    66% {
+      margin-top: 40%;
+    }
+
+    to {
+      margin-top: 40%;
+    }
+  }
 }
 
 /* .darkestGreen {

@@ -20,3 +20,13 @@ $(".container").on("click", ".box", function(){
     console.log("Something is wrong with the color picking function!");
   }
 });
+
+var sound = new Howl({
+  src: ["sounds/gb.mp3"]
+});
+
+function gbBeep() {
+  sound.play();
+}
+
+setTimeout(gbBeep, 3500);
