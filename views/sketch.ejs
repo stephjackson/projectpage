@@ -1,14 +1,16 @@
 <% include partials/sketchheader %>
 <body>
-<div class="darkGrayContainer">
-  <div onload="startAnimation()" class="invisibleContainer"><p id="animation">StephZone</p></div>
-  <h1 class="fancy"><i><span>GAME BOY SPRITE EDITOR</span></i></h1>
-  <div class="container">
-    <% for (var i = 0; i < 3136; i++) { %>
-      <div class="box lightestGreen"></div>
-    <% } %>
+<div class="lightGrayContainer">
+  <div class="darkGrayContainer">
+    <div onload="startAnimation()"><p id="animation">steph.zone</p></div>
+    <h1 class="fancy"><i><span>GAME BOY SPRITE EDITOR</span></i></h1>
+    <div class="container">
+      <% for (var i = 0; i < 3136; i++) { %>
+        <div class="box lightestGreen"></div>
+      <% } %>
+    </div>
+    <h1 class="mobile"><i>GAME BOY SPRITE EDITOR</i></h1>
   </div>
-  <h1 class="mobile"><i>GAME BOY SPRITE EDITOR</i></h1>
 </div>
 
 <% include partials/sketchfooter %>
