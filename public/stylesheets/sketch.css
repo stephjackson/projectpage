@@ -118,8 +118,9 @@ h1 {
 @media screen and (orientation: portrait)
 {
   .lightGrayContainer {
-    height: 1500px;
-    border-radius: 8px;
+    height: 1200px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 120px;
   }
 }
 
