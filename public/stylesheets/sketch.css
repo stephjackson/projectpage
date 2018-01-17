@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 
+html, body {
+  height: 100%;
+}
+
 body {
   margin: 0 auto;
   padding: 0px;
-  background-color: #535356;
   z-index: 0;
   font-family: Questrial;
+  background-color: #C3BFBC
 }
 
 h1 {
@@ -14,20 +18,59 @@ h1 {
   text-shadow: 1px 2px 2px #222222;
 }
 
+.darkGrayContainer {
+  height: 80%;
+  width: 50%;
+  background-color: #535356;
+  padding-top: 1%;
+  padding-bottom: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
+  border-radius: 30px;
+}
+
 .container {
   display: grid;
-  width: 560px;
+  width: 448px;
   grid-gap: 0px;
-  grid-template-columns: repeat(56, 10px);
+  grid-template-columns: repeat(56, 8px);
   margin: 0 auto;
   position: relative;
-  border: 5px solid black;
+  vertical-align: middle;
+  border: 4px solid black;
 }
 
 .box {
-  padding: 5px;
+  padding: 4px;
   background-color: #9bbc0f;
   z-index: 1;
+}
+
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  border-bottom: 4px solid #A04F87;
+  border-top: 4px solid #48337A;
+  top: 0;
+  width: 30%;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 4%;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 4%;
 }
 
 /* .darkestGreen {
