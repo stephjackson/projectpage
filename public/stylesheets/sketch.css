@@ -78,6 +78,10 @@ h1 {
 }
 
 @media screen and (orientation: portrait), screen and (max-width: 1200px) {
+  .body {
+    background-color: #535356
+  }
+
   .darkGrayContainer {
     height: 100%;
     width: 100%;
