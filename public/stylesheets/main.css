@@ -71,6 +71,18 @@ a:hover {
   background-image: url(/images/gameboy.jpg);
 }
 
+#bg5 {
+  background-image: url(/images/hedgehog.jpg);
+}
+
+#bg6 {
+  background-image: url(/images/chess.jpg);
+}
+
+#bg7 {
+  background-image: url(/images/practice.jpg);
+}
+
 @media (orientation: portrait) {
     h1, a {
       font-size: 600%;
